@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeiKaiFengService", "LeiKaiFengService\LeiKaiFengService.csproj", "{DBCC5E52-6E81-4CF5-BAE6-E17EB512A3C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SslCertCreate", "SslCertCreate\SslCertCreate.csproj", "{C71AF6E3-5960-4CC2-9DB6-E3EB7AD1587D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBCC5E52-6E81-4CF5-BAE6-E17EB512A3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBCC5E52-6E81-4CF5-BAE6-E17EB512A3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBCC5E52-6E81-4CF5-BAE6-E17EB512A3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBCC5E52-6E81-4CF5-BAE6-E17EB512A3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71AF6E3-5960-4CC2-9DB6-E3EB7AD1587D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71AF6E3-5960-4CC2-9DB6-E3EB7AD1587D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71AF6E3-5960-4CC2-9DB6-E3EB7AD1587D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71AF6E3-5960-4CC2-9DB6-E3EB7AD1587D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1240F1B1-CA0F-4124-980C-49D3FFA55056}
+	EndGlobalSection
+EndGlobal
