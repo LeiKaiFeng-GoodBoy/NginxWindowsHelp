@@ -94,8 +94,36 @@ namespace SslCertCreate
             return path;
         }
 
+        static void JumInstall(System.Action action)
+        {
+            while (true)
+            {
+                Console.WriteLine("1.继续安装");
+                Console.WriteLine("2.跳过安装");
+                Console.WriteLine("请选择");
+                string s = Console.ReadLine();
+
+                if (s == "1")
+                {
+                    action();
+
+                    return;
+                }
+                else if(s == "2")
+                {
+                    return;
+                }
+            }       
+        }
+
         static void InstallSrver()
         {
+
+            
+
+
+
+
 
             Process
                 .Start(@"C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe", GetDnsProxyServerEXEPath())
@@ -331,7 +359,7 @@ namespace SslCertCreate
             CreateCert();
 
             Console.WriteLine("正在安装DNSProxy服务");
-            InstallSrver();
+            JumInstall(() => InstallSrver());
 
             Console.WriteLine("正在准备设置DNS服务器设置，请保持最常用的网络链接，按回车继续");
             Console.ReadLine();
@@ -346,7 +374,7 @@ namespace SslCertCreate
 
 
             Console.WriteLine("正在启动bat脚本， 可以手动把新启动的窗口关掉");
-
+            RunStopBat();
             RunBat();
 
             Console.WriteLine("安装完毕，回车退出");
